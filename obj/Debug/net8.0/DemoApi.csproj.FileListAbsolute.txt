@@ -31,3 +31,4 @@
 /home/mk/code/learn-rest/DemoApi/obj/Debug/net8.0/DemoApi.pdb
 /home/mk/code/learn-rest/DemoApi/obj/Debug/net8.0/DemoApi.genruntimeconfig.cache
 /home/mk/code/learn-rest/DemoApi/obj/Debug/net8.0/ref/DemoApi.dll
+/home/mk/code/learn-rest/DemoApi/obj/Debug/net8.0/DemoApi.sourcelink.json
