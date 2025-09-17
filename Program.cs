@@ -7,7 +7,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<IItemStore, InMemoryItemStore>();
 
+
+
 var app = builder.Build();
+
 
 var summaries = new[]
 {
