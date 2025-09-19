@@ -148,6 +148,33 @@ public sealed class InMemoryItemStore : IItemStore
         => Task.FromResult(_data.TryRemove(id, out _));
 }
 
+public record Champion
+{
+    public Guid Id { get; set; }
+    public string Name { get; set; }
+    public string Role { get; set; }
+}
+
+public record Spell
+{
+    public Guid Id { get; set; }
+    public string Name { get; set; }
+    public string MainStat { get; set; }
+}
+
+public record SpecificGameState
+{
+    public Guid Id { get; set; }
+    public string Title { get; set; }
+    public string Content { get; set; }
+    public List<Spell> Spells { get; set; }
+    public DateTime PlayedDate { get; set; } = DateTime.Now;
+    public Guid ChampionId { get; set; }
+    public string Splash { get; set; }
+    public Champion Champion { get; set; }
+}
+
+public record SpecificGameStateDto(Guid Id, string Title, string Content, List<Spell> Spells, DateTime PlayedDate, string Splash, Champion Champion);
 
 
 
